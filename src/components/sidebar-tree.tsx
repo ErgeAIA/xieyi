@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { LucideIcon } from "lucide-react";
-import { consumeContentNav } from "@/lib/content-nav";
+import { isContentNav, clearContentNav } from "@/lib/content-nav";
 import {
   Tooltip,
   TooltipTrigger,
@@ -129,7 +129,7 @@ export function TreeMenu({
   React.useEffect(() => {
     // 内容链跳转（词典/藏经阁等的「参考/延伸」链接）不关联导航：
     // 右侧精确展示内容即可，侧栏只保留一级路由展开与高亮，不展开相关子菜单。
-    const fromContent = consumeContentNav();
+    const fromContent = isContentNav();
     const hash = decodeURIComponent(window.location.hash.slice(1));
     const params = new URLSearchParams(window.location.search);
     const cat = params.get("cat");
@@ -187,6 +187,7 @@ export function TreeMenu({
   // 由目标页挂载时按 hash / ?cat= 定位。
   const jump = (e: React.MouseEvent<HTMLAnchorElement>, node: TreeNode) => {
     if (!node.href) return;
+    clearContentNav(); // 侧栏点击优先于 2 秒内的内容链接标记
     const sameRoute = node.route === pathname;
     if (sameRoute) {
       e.preventDefault();

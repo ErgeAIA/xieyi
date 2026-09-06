@@ -39,6 +39,8 @@ function CommandDialog({
   children,
   className,
   showCloseButton = false,
+  /** 透传给内部 Command（如 shouldFilter={false} 接管过滤与排序） */
+  commandProps,
   ...props
 }: Omit<React.ComponentProps<typeof Dialog>, "children"> & {
   title?: string
@@ -46,6 +48,7 @@ function CommandDialog({
   className?: string
   showCloseButton?: boolean
   children: React.ReactNode
+  commandProps?: React.ComponentProps<typeof CommandPrimitive>
 }) {
   return (
     <Dialog {...props}>
@@ -60,7 +63,9 @@ function CommandDialog({
         )}
         showCloseButton={showCloseButton}
       >
-        <Command className="size-full">{children}</Command>
+        <Command className="size-full" {...commandProps}>
+          {children}
+        </Command>
       </DialogContent>
     </Dialog>
   )
