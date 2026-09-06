@@ -9,7 +9,7 @@ import {
   FieldLabel,
 } from "@/components/page-shell";
 import { CopyBlock } from "@/components/copy-block";
-import { markContentNav } from "@/lib/content-nav";
+import { ContentLink } from "@/components/content-link";
 import {
   glossary,
   glossaryCategoryOrder,
@@ -80,14 +80,12 @@ export default function GlossaryPage() {
                       {t.related && t.related.length > 0 && (
                         <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
                           {t.related.map((r) => (
-                            <a
+                            <ContentLink
                               key={r.href}
                               href={r.href}
-                              onClick={markContentNav}
+                              label={r.label}
                               className="text-primary hover:underline"
-                            >
-                              {r.label} ↗
-                            </a>
+                            />
                           ))}
                         </div>
                       )}

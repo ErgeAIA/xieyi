@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/motion/reveal";
 import { PageContainer, PageHeader, GroupLabel } from "@/components/page-shell";
-import { markContentNav } from "@/lib/content-nav";
+import { ContentLink } from "@/components/content-link";
 import {
   resources,
   resourceCategories,
@@ -87,14 +87,12 @@ export default function ResourcesPage() {
                             相关：
                           </span>
                           {r.related.map((rel) => (
-                            <a
+                            <ContentLink
                               key={rel.href}
                               href={rel.href}
-                              onClick={markContentNav}
+                              label={rel.label}
                               className="text-primary hover:underline"
-                            >
-                              {rel.label}
-                            </a>
+                            />
                           ))}
                         </p>
                       )}

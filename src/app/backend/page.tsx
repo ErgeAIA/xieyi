@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Reveal } from "@/components/motion/reveal";
 import { PageContainer, PageHeader, FieldLabel, GroupLabel } from "@/components/page-shell";
 import { CopyBlock } from "@/components/copy-block";
-import { markContentNav } from "@/lib/content-nav";
+import { ContentLink } from "@/components/content-link";
 import {
   backendTopics,
   backendGroups,
@@ -174,14 +174,12 @@ export default function BackendPage() {
           <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 text-sm">
             <span className="text-xs text-muted-foreground">延伸阅读：</span>
             {t.related.map((r) => (
-              <a
+              <ContentLink
                 key={r.href}
                 href={r.href}
-                onClick={markContentNav}
+                label={r.label}
                 className="text-primary hover:underline"
-              >
-                {r.label}
-              </a>
+              />
             ))}
           </div>
         )}
