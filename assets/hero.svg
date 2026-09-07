@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="写意 Xieyi — 以意运码的 Vibe Coding 参考站">
+  <title>写意 Xieyi</title>
+  <desc>水墨笔触与代码意象融合的项目题图</desc>
+  <style>
+    .ink   { fill:#1f2937; }
+    .ink2  { fill:#374151; }
+    .soft  { fill:#475569; opacity:.18; }
+    .soft2 { fill:#475569; opacity:.10; }
+    .red   { fill:#b91c1c; }
+    .title { fill:#111827; font-family:'STKaiti','KaiTi','楷体','PingFang SC','Noto Serif CJK SC',serif; font-weight:700; }
+    .latin { fill:#111827; font-family:Georgia,'Times New Roman',serif; font-weight:700; }
+    .sub   { fill:#6b7280; font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif; }
+    .mono  { fill:#0f172a; font-family:'SF Mono','JetBrains Mono','Fira Code',Consolas,'PingFang SC',monospace; }
+    .stroke{ fill:none; stroke:#1f2937; stroke-linecap:round; }
+    @media (prefers-color-scheme: dark){
+      .ink{fill:#e5e7eb} .ink2{fill:#cbd5e1} .soft{fill:#94a3b8;opacity:.16} .soft2{fill:#94a3b8;opacity:.08}
+      .red{fill:#f87171} .title{fill:#f9fafb} .latin{fill:#f3f4f6} .sub{fill:#9ca3af} .mono{fill:#e2e8f0}
+      .stroke{stroke:#e5e7eb}
+    }
+  </style>
+
+  <ellipse class="soft"  cx="240" cy="300" rx="300" ry="150"/>
+  <ellipse class="soft2" cx="980" cy="120" rx="260" ry="140"/>
+
+  <path class="stroke" stroke-width="26" opacity=".92" d="M70 285 C 230 215, 430 250, 620 205 S 900 175, 1010 215"/>
+  <path class="stroke" stroke-width="12" opacity=".5"  d="M95 305 C 260 245, 450 280, 640 235 S 900 205, 1010 240"/>
+  <circle class="ink"  cx="1040" cy="200" r="7"/>
+  <circle class="ink2" cx="1075" cy="225" r="4"/>
+  <circle class="ink2" cx="1015" cy="242" r="3"/>
+
+  <text class="title" x="80" y="170" font-size="150">写意</text>
+  <text class="latin" x="92" y="225" font-size="52" letter-spacing="14">XIEYI</text>
+  <text class="sub"   x="96" y="265" font-size="26" letter-spacing="2">以意运码，码落而器成</text>
+
+  <g transform="translate(760,90)">
+    <rect x="0" y="0" width="440" height="240" rx="16" class="stroke" stroke-width="2" opacity=".5"/>
+    <circle class="red"  cx="26" cy="26" r="6"/>
+    <circle class="ink2" cx="48" cy="26" r="6"/>
+    <circle class="ink2" cx="70" cy="26" r="6"/>
+    <text class="mono" x="24" y="78"  font-size="20">const xieyi = intent()</text>
+    <text class="mono" x="24" y="112" font-size="20">return &lt;Xieyi</text>
+    <text class="mono" x="24" y="146" font-size="20">  components={真实可交互}&gt;</text>
+    <text class="mono" x="24" y="180" font-size="20">  以意运码&lt; /&gt;<tspan class="red">|</tspan></text>
+  </g>
+
+  <g transform="translate(500,300)">
+    <rect x="0" y="0" width="76" height="76" rx="8" class="red" opacity=".92"/>
+    <text x="38" y="54" text-anchor="middle" font-size="46" fill="#fff" font-family="'STKaiti','KaiTi','楷体','PingFang SC',serif" font-weight="700">意</text>
+  </g>
+</svg>
