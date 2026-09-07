@@ -1,0 +1,99 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Serif+SC:wght@700;900&amp;display=swap');
+      .cat   { font-family: 'Inter', system-ui,-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; letter-spacing:3px; fill:#ff6a2b; }
+      .title { font-family: 'Noto Serif SC','Source Han Serif',serif; font-size:120px; font-weight:900; fill:#ff6a2b; }
+      .cap   { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; font-size:14px; font-weight:600; letter-spacing:2px; fill:#e6b49a; }
+      .tag   { font-family: 'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif; font-size:16px; font-weight:500; fill:#e6b49a; }
+      .data  { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:700; letter-spacing:1px; fill:#e6b49a; }
+      .foot  { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:400; fill:#b08a72; }
+      .seg   { fill:none; stroke:#ff6a2b; stroke-width:1.5; opacity:.5; vector-effect:non-scaling-stroke; stroke-linecap:round; }
+      .lbl   { font-family: system-ui,-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; letter-spacing:1px; fill:#e6b49a; text-anchor:middle; }
+      .lbl-aux { font-size:10px; fill:#b07a5e; }
+    </style>
+
+    <radialGradient id="bloom" cx="72%" cy="45%" r="70%">
+      <stop offset="0%"   stop-color="#ff6a2b" stop-opacity="0.24"/>
+      <stop offset="45%"  stop-color="#ff6a2b" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ff6a2b" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="darken" cx="50%" cy="50%" r="85%">
+      <stop offset="58%"  stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+    </radialGradient>
+
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="tglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 底色 + 光晕 + 压暗 -->
+  <rect width="1200" height="400" fill="#1a0f0c"/>
+  <rect width="1200" height="400" fill="url(#bloom)"/>
+  <rect width="1200" height="400" fill="url(#darken)"/>
+
+  <!-- 北斗九星连线：放大到右半幅 460..1200 x 0..400 -->
+  <svg x="460" y="0" width="740" height="400" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <line class="seg" x1="80" y1="14" x2="82" y2="72"/>
+    <line class="seg" x1="82" y1="72" x2="59" y2="80"/>
+    <line class="seg" x1="59" y1="80" x2="54" y2="56"/>
+    <line class="seg" x1="54" y1="56" x2="38" y2="48"/>
+    <line class="seg" x1="38" y1="48" x2="26" y2="40"/>
+    <line class="seg" x1="26" y1="40" x2="11" y2="64"/>
+  </svg>
+
+  <!-- 星点 + 标签 -->
+  <g>
+    <circle cx="1052"   cy="56"   r="5.5" fill="#ff6a2b" filter="url(#glow)"/>
+    <text class="lbl" x="1052"   y="44">天枢·贪狼</text>
+
+    <circle cx="1066.8" cy="288"  r="5.5" fill="#ff6a2b" filter="url(#glow)"/>
+    <text class="lbl" x="1066.8" y="306">天璇·巨门</text>
+
+    <circle cx="896.6"  cy="320"  r="5.5" fill="#ff6a2b" filter="url(#glow)"/>
+    <text class="lbl" x="896.6"  y="338">天玑·禄存</text>
+
+    <circle cx="859.6"  cy="224"  r="5.5" fill="#ff6a2b" filter="url(#glow)"/>
+    <text class="lbl" x="859.6"  y="212">天权·文曲</text>
+
+    <circle cx="741.2"  cy="192"  r="5.5" fill="#ff6a2b" filter="url(#glow)"/>
+    <text class="lbl" x="741.2"  y="210">玉衡·廉贞</text>
+
+    <circle cx="652.4"  cy="160"  r="5.5" fill="#ff6a2b" filter="url(#glow)"/>
+    <text class="lbl" x="652.4"  y="148">开阳·武曲</text>
+
+    <circle cx="541.4"  cy="256"  r="5.5" fill="#ff6a2b" filter="url(#glow)"/>
+    <text class="lbl" x="541.4"  y="274">瑶光·破军</text>
+
+    <circle cx="563.6"  cy="120"  r="4"   fill="#b07a5e" opacity="0.9" filter="url(#glow)"/>
+    <text class="lbl lbl-aux" x="563.6" y="138">洞明·左辅</text>
+
+    <circle cx="630.2"  cy="344"  r="4"   fill="#b07a5e" opacity="0.9" filter="url(#glow)"/>
+    <text class="lbl lbl-aux" x="630.2" y="362">隐元·右弼</text>
+  </g>
+
+  <!-- 左侧文案 -->
+  <text class="cat" x="70" y="44">VIBE CODING · COMPONENT REFERENCE</text>
+  <text class="title" x="60" y="178" filter="url(#tglow)">写意</text>
+  <rect x="70" y="198" width="380" height="2" fill="#ff6a2b" opacity="0.5"/>
+  <text class="cap" x="70" y="224">XIEYI · VIBE CODING REFERENCE</text>
+  <text class="tag" x="70" y="290">用准确术语讲清组件与需求，让 AI 写出能直接交付的界面。</text>
+  <text class="data" x="70" y="334">
+    <tspan fill="#ff6a2b">真实可交互组件</tspan>
+    <tspan fill="#b08a72">  ·  </tspan>
+    <tspan fill="#ff6a2b">组件库 + 概念库</tspan>
+    <tspan fill="#b08a72">  ·  </tspan>
+    <tspan fill="#ff6a2b">暗色模式</tspan>
+  </text>
+  <text class="foot" x="70" y="362">A reference site for Vibe Coding — real interactive shadcn components.</text>
+
+  <rect x="1" y="1" width="1198" height="398" fill="none" stroke="#3a221a" stroke-width="1"/>
+</svg>

@@ -1,6 +1,6 @@
 # 写意 Xieyi
 
-![写意 Xieyi](https://raw.githubusercontent.com/ErgeAIA/xieyi/main/assets/banner.svg)
+![写意 Xieyi](https://raw.githubusercontent.com/ErgeAIA/xieyi/main/assets/banner-hero.svg)
 
 > 以意运码，码落而器成。胸中之构，言而为品。
 
