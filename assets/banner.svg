@@ -1,0 +1,84 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <title>写意 Xieyi</title>
+  <desc>面向 Vibe Coding 的参考站：真实可交互组件库 + 概念库</desc>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+      .cat   { font-family:'Inter',system-ui,sans-serif; font-size:11px; font-weight:700; letter-spacing:3px; fill:#D4532B; }
+      .title { font-family:'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif; font-size:84px; font-weight:900; fill:#FFFFFF; }
+      .cap   { font-family:'Inter',system-ui,sans-serif; font-size:14px; font-weight:500; letter-spacing:4px; fill:#888888; }
+      .sub   { font-family:'PingFang SC','Microsoft YaHei',sans-serif; font-size:24px; font-weight:700; fill:#FFFFFF; }
+      .tag   { font-family:'PingFang SC','Microsoft YaHei',sans-serif; font-size:15px; font-weight:400; fill:#AAAAAA; }
+      .data  { font-family:'Inter',system-ui,sans-serif; font-size:14px; }
+      .foot  { font-family:'Inter',system-ui,sans-serif; font-size:12px; font-weight:400; fill:#666666; }
+      .lbl   { font-family:'Inter',system-ui,sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; fill:#AAAAAA; }
+      .cn    { font-family:'PingFang SC','Microsoft YaHei',sans-serif; font-size:10px; font-weight:400; fill:#888888; }
+      .btn   { font-family:'Inter',system-ui,sans-serif; font-size:9px; font-weight:700; fill:#FFFFFF; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="400" fill="#111111"/>
+
+  <!-- left accent -->
+  <rect x="60" y="48" width="3" height="304" fill="#D4532B"/>
+  <rect x="60" y="48" width="760" height="2" fill="#FFFFFF" opacity="0.15"/>
+  <rect x="60" y="350" width="760" height="1" fill="#FFFFFF" opacity="0.15"/>
+
+  <text x="80" y="88" class="cat">VIBE CODING · COMPONENT REFERENCE</text>
+  <text x="80" y="178" class="title">写意</text>
+  <text x="80" y="212" class="cap">XIEYI · VIBE CODING REFERENCE</text>
+  <text x="80" y="258" class="sub">以意运码，码落而器成</text>
+  <text x="80" y="288" class="tag">真实可交互的组件库与 Vibe Coding 概念库</text>
+  <text x="80" y="322" class="data"><tspan fill="#D4532B" font-weight="700">真实可交互组件</tspan><tspan fill="#AAAAAA" font-weight="400">  ·  </tspan><tspan fill="#D4532B" font-weight="700">组件库 + 概念库</tspan><tspan fill="#AAAAAA" font-weight="400">  ·  </tspan><tspan fill="#D4532B" font-weight="700">暗色模式</tspan></text>
+  <text x="80" y="370" class="foot">A reference site for Vibe Coding — real interactive shadcn components.</text>
+
+  <!-- right: capabilities -->
+  <text x="890" y="104" class="cat">CAPABILITIES</text>
+  <rect x="860" y="124" width="1" height="200" fill="#FFFFFF" opacity="0.08"/>
+
+  <!-- Card 1 COMPONENTS -->
+  <rect x="860" y="124" width="150" height="92" rx="6" fill="#1C1C1C"/>
+  <text x="872" y="146" class="lbl">COMPONENTS</text>
+  <text x="872" y="162" class="cn">组件库</text>
+  <rect x="872" y="170" width="64" height="18" rx="4" fill="#D4532B"/>
+  <text x="904" y="183" class="btn" text-anchor="middle">Button</text>
+  <rect x="946" y="168" width="46" height="24" rx="3" fill="none" stroke="#888888" stroke-width="1"/>
+  <rect x="952" y="176" width="30" height="2" fill="#555555"/>
+  <rect x="952" y="183" width="24" height="2" fill="#555555"/>
+  <rect x="952" y="190" width="28" height="2" fill="#555555"/>
+
+  <!-- Card 2 CONCEPTS -->
+  <rect x="1030" y="124" width="150" height="92" rx="6" fill="#1C1C1C"/>
+  <text x="1042" y="146" class="lbl">CONCEPTS</text>
+  <text x="1042" y="162" class="cn">概念库</text>
+  <circle cx="1046" cy="176" r="3" fill="#D4532B"/>
+  <rect x="1056" y="175" width="104" height="2" fill="#555555"/>
+  <circle cx="1046" cy="188" r="3" fill="#D4532B"/>
+  <rect x="1056" y="187" width="88" height="2" fill="#555555"/>
+  <circle cx="1046" cy="200" r="3" fill="#D4532B"/>
+  <rect x="1056" y="199" width="96" height="2" fill="#555555"/>
+
+  <!-- Card 3 EXAMPLES -->
+  <rect x="860" y="228" width="150" height="92" rx="6" fill="#1C1C1C"/>
+  <text x="872" y="250" class="lbl">EXAMPLES</text>
+  <text x="872" y="266" class="cn">示例</text>
+  <rect x="872" y="272" width="126" height="38" rx="3" fill="#0E0E0E" stroke="#888888" stroke-width="1"/>
+  <circle cx="882" cy="282" r="2.5" fill="#D4532B"/>
+  <circle cx="892" cy="282" r="2.5" fill="#888888"/>
+  <circle cx="902" cy="282" r="2.5" fill="#888888"/>
+  <rect x="880" y="290" width="42" height="16" rx="2" fill="#D4532B" opacity="0.85"/>
+  <rect x="930" y="294" width="56" height="2" fill="#555555"/>
+  <rect x="930" y="300" width="40" height="2" fill="#555555"/>
+
+  <!-- Card 4 THEME -->
+  <rect x="1030" y="228" width="150" height="92" rx="6" fill="#1C1C1C"/>
+  <text x="1042" y="250" class="lbl">THEME</text>
+  <text x="1042" y="266" class="cn">主题 · 暗色</text>
+  <circle cx="1062" cy="292" r="12" fill="#D4532B"/>
+  <line x1="1062" y1="272" x2="1062" y2="278" stroke="#D4532B" stroke-width="2"/>
+  <line x1="1062" y1="306" x2="1062" y2="312" stroke="#D4532B" stroke-width="2"/>
+  <line x1="1042" y1="292" x2="1048" y2="292" stroke="#D4532B" stroke-width="2"/>
+  <line x1="1076" y1="292" x2="1082" y2="292" stroke="#D4532B" stroke-width="2"/>
+  <circle cx="1102" cy="292" r="11" fill="#AAAAAA"/>
+  <circle cx="1109" cy="288" r="11" fill="#1C1C1C"/>
+</svg>
