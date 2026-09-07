@@ -59,7 +59,7 @@ const SOCIALS: Social[] = [
 const PROJECTS = [
   { name: "ErgeMD", desc: "Markdown 阅读桌面应用", href: "https://github.com/ErgeAIA/ErgeMD" },
   { name: "ErgeHash", desc: "文件哈希校验工具", href: "https://github.com/ErgeAIA/ErgeHash" },
-  { name: "AI Vault", desc: "AI 创作者工作台", href: "https://ergeaia.github.io/aivault-site" },
+  { name: "AI Vault", desc: "超强本地AI中枢", href: "https://ergeaia.github.io/aivault-site" },
 ];
 
 /** Hero 右侧作者名片：头像 + 身份 + 社交 + 精选项目。 */
