@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // 兜底：bare `eslint` 会扫 cwd 产物，显式排除更稳
+    "**/.next/**",
+    "node_modules",
+    "coverage",
   ]),
 ]);
 

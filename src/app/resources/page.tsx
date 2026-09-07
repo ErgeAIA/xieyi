@@ -12,6 +12,7 @@ import {
   resourceCategoryDesc,
   resourceCategoryAlias,
   resourceId,
+  resourcesCheckedAt,
 } from "@/content/resources";
 
 export const metadata: Metadata = {
@@ -28,6 +29,9 @@ export default function ResourcesPage() {
         en="Resources"
         description="与 AI 沟通组件或前后端时，可对照这些资源给出更准确的需求。点击名称跳转。"
       />
+      <p className="-mt-4 mb-6 text-xs text-muted-foreground/80">
+        只收官方来源 · 共 {resources.length} 条 · 外链最近人工核对：{resourcesCheckedAt}
+      </p>
 
       {resourceCategories.map((cat) => {
         const items = resources.filter((r) => r.category === cat);
@@ -73,6 +77,14 @@ export default function ResourcesPage() {
                     </CardHeader>
                     <CardContent className="space-y-1.5 text-sm text-muted-foreground">
                       <p>{r.note}</p>
+                      {r.when && (
+                        <p className="text-xs">
+                          <span className="font-medium text-foreground/70">
+                            何时选它：
+                          </span>
+                          {r.when}
+                        </p>
+                      )}
                       {r.ai && (
                         <p className="text-xs">
                           <span className="font-medium text-foreground/70">

@@ -25,10 +25,12 @@ const plexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
   title: "写意 · Vibe Coding 参考",
   description: "写意，以意运码，码落而器成。胸中之构，言而为品。",
-  icons: { icon: "/logo/icon.svg" },
+  icons: { icon: `${BASE_PATH}/logo/icon.svg` },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -51,11 +53,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
         <link
           rel="stylesheet"
-          href="/fonts/lxgw-wenkai/lxgw-wenkai.css"
+          href={`${BASE_PATH}/fonts/lxgw-wenkai/lxgw-wenkai.css`}
         />
         <link
           rel="stylesheet"
-          href="/fonts/ma-shan-zheng/ma-shan-zheng.css"
+          href={`${BASE_PATH}/fonts/ma-shan-zheng/ma-shan-zheng.css`}
         />
       </head>
       <body className="min-h-screen bg-background text-foreground">
