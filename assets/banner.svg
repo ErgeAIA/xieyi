@@ -3,17 +3,16 @@
   <desc>面向 Vibe Coding 的参考站：真实可交互组件库 + 概念库</desc>
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-      .cat   { font-family:'Inter',system-ui,sans-serif; font-size:11px; font-weight:700; letter-spacing:3px; fill:#D4532B; }
+      .cat   { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; letter-spacing:3px; fill:#D4532B; }
       .title { font-family:'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif; font-size:84px; font-weight:900; fill:#FFFFFF; }
-      .cap   { font-family:'Inter',system-ui,sans-serif; font-size:14px; font-weight:500; letter-spacing:4px; fill:#888888; }
+      .cap   { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; font-size:14px; font-weight:500; letter-spacing:4px; fill:#888888; }
       .sub   { font-family:'PingFang SC','Microsoft YaHei',sans-serif; font-size:24px; font-weight:700; fill:#FFFFFF; }
       .tag   { font-family:'PingFang SC','Microsoft YaHei',sans-serif; font-size:15px; font-weight:400; fill:#AAAAAA; }
-      .data  { font-family:'Inter',system-ui,sans-serif; font-size:14px; }
-      .foot  { font-family:'Inter',system-ui,sans-serif; font-size:12px; font-weight:400; fill:#666666; }
-      .lbl   { font-family:'Inter',system-ui,sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; fill:#AAAAAA; }
+      .data  { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; font-size:14px; }
+      .foot  { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; font-size:12px; font-weight:400; fill:#666666; }
+      .lbl   { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; fill:#AAAAAA; }
       .cn    { font-family:'PingFang SC','Microsoft YaHei',sans-serif; font-size:10px; font-weight:400; fill:#888888; }
-      .btn   { font-family:'Inter',system-ui,sans-serif; font-size:9px; font-weight:700; fill:#FFFFFF; }
+      .btn   { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; font-size:9px; font-weight:700; fill:#FFFFFF; }
     </style>
   </defs>
 
