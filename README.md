@@ -1,9 +1,5 @@
 # 写意 Xieyi
 
-<p align="center">
-  <img src="./assets/hero.svg" alt="写意 Xieyi 题图 — 水墨笔触与代码意象" width="100%">
-</p>
-
 > 以意运码，码落而器成。胸中之构，言而为品。
 
 **写意（Xieyi）** 是一个面向 **Vibe Coding** 的参考站点：把"专注产品设计、把实现交给 AI"的理念，落地为可浏览的 **组件库 + 概念库**。
