@@ -90,7 +90,7 @@ export function HomeAuthorCard() {
         onClick={() => setEgg((v) => !v)}
         aria-label="一个小彩蛋"
         title="发现一个小彩蛋"
-        className="absolute right-3 top-3 flex size-6 items-center justify-center rounded-full text-xs text-muted-foreground/50 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        className="egg-pulse absolute right-3 top-3 flex size-6 items-center justify-center rounded-full text-xs text-muted-foreground/50 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
       >
         ✦
       </button>
