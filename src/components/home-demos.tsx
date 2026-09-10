@@ -65,6 +65,7 @@ const PROJECTS = [
 /** Hero 右侧作者名片：头像 + 身份 + 社交 + 精选项目。 */
 export function HomeAuthorCard() {
   const [copied, setCopied] = React.useState(false);
+  const [egg, setEgg] = React.useState(false);
 
   const copyWechat = React.useCallback(async () => {
     try {
@@ -77,7 +78,16 @@ export function HomeAuthorCard() {
   }, []);
 
   return (
-    <div className="rounded-xl border border-white/15 bg-card/45 p-4 shadow-sm backdrop-blur-md md:p-5 dark:border-white/10 dark:bg-card/30">
+    <div className="relative rounded-xl border border-white/15 bg-card/45 p-4 shadow-sm backdrop-blur-md md:p-5 dark:border-white/10 dark:bg-card/30">
+      <button
+        type="button"
+        onClick={() => setEgg((v) => !v)}
+        aria-label="一个小彩蛋"
+        title="发现一个小彩蛋"
+        className="absolute right-3 top-3 flex size-6 items-center justify-center rounded-full text-xs text-muted-foreground/50 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        ✦
+      </button>
       <p className="text-[0.7rem] font-medium uppercase tracking-[0.18em] text-muted-foreground">
         在下 · AUTHOR
       </p>
@@ -105,6 +115,17 @@ export function HomeAuthorCard() {
       <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
         道不藏私，功法无偿
       </p>
+
+      <div
+        className={cn(
+          "grid transition-all duration-300 ease-out",
+          egg ? "mt-3 grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
+        )}
+      >
+        <p className="overflow-hidden text-xs italic leading-relaxed text-muted-foreground/90">
+          “出门在外，身份都是自己给的”
+        </p>
+      </div>
 
       <Separator className="my-4" />
 
