@@ -67,6 +67,12 @@ export function HomeAuthorCard() {
   const [copied, setCopied] = React.useState(false);
   const [egg, setEgg] = React.useState(false);
 
+  React.useEffect(() => {
+    if (!egg) return;
+    const t = window.setTimeout(() => setEgg(false), 3200);
+    return () => window.clearTimeout(t);
+  }, [egg]);
+
   const copyWechat = React.useCallback(async () => {
     try {
       await navigator.clipboard.writeText("ErgeAIA");
