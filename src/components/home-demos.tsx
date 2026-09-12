@@ -223,6 +223,22 @@ export function HomeAuthorCard() {
             </button>
           );
         })}
+        <Badge
+          variant="default"
+          className="h-9 rounded-full px-3.5 shadow-sm"
+          render={
+            <a
+              href="https://ergeaia.github.io/"
+              target="_blank"
+              rel="noreferrer"
+              title="个人站 · ErgeAIA"
+              aria-label="访问个人站"
+            />
+          }
+        >
+          <Globe />
+          个人站
+        </Badge>
       </div>
     </div>
   );
