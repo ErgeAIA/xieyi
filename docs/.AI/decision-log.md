@@ -54,3 +54,13 @@
 - **不在本次（defer）**：页脚、营销站式顶栏大改、CAT 链接、移动端精修、组件级原始 HTML 示例令牌化（D6）。
 - **原因**：用户 2026-09-03 确认的范围边界（Q1–Q8）。
 - **涉及**：`src/components/page-shell.tsx`、`src/app/globals.css`、`src/app/layout.tsx`、`src/app/page.tsx`、`src/app/concepts|resources|backend|examples/page.tsx`、`src/components/components-view.tsx`、`src/components/motion/reveal.tsx`、`src/components/site-sidebar.tsx`（新增惰性 `SidebarExtras`）、`package.json`；计划路径 `docs/superpowers/plans/2026-09-03-stage-c-unified-pass.md`。
+
+---
+
+## DEC-005: 本地提交同时推送远端（普通 push 长期授权）
+
+- **日期**：2026-09-13
+- **背景**：用户全局偏好原为「不得自动推送」；本项目用户明确要求本地提交的同时推送到云端，无需逐次下达指令。另发现 `AGENTS.md` 此前一直未纳入版本控制（untracked），与自身「视 AGENTS.md 为代码」协议不符。
+- **旧值 → 处置 → 新值**：旧值：仅创建本地提交，`git push` 须用户逐次指令（继承自用户全局偏好）→ 处置：项目级覆盖 → 新值：普通 `git push`（非 force，当前分支 → `origin`）随本地提交同步执行，无需逐次确认；`git push --force` 等高风险操作仍逐次确认。
+- **涉及**：`AGENTS.md`（Permissions 节新增「Git 推送授权」；本次首次入库）、`docs/.AI/decision-log.md`。
+
